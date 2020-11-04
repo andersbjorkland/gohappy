@@ -1,0 +1,16 @@
+$offWhite: #fdfcfd;
+$darkGrey: #5a5a5a;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $offWhite;
+  color: $darkGrey;
+}
+
+.aria-hidden {
+  position: absolute;
+  left: -1200px;
+}

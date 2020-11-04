@@ -1,4 +1,9 @@
-body {
-  background-color: red;
-  color: white;
-}
+// Colors
+$offWhite: #fdfcfd;
+$darkGrey: #5a5a5a;
+
+@import "global";
+@import "heading";
+@import "profile";
+@import "intro";
+@import "content";
