@@ -3,6 +3,15 @@
   margin: 0 auto;
 
   &__list {
+    margin-top: 0;
     padding: 0 0 0 1rem;
+  }
+
+  &__heading {
+    margin-bottom: 0.5rem;
+  }
+
+  &__paragraph {
+    margin-top: 0;
   }
 }
