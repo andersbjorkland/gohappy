@@ -1,6 +1,10 @@
 $offWhite: #fdfcfd;
 $darkGrey: #5a5a5a;
 
+@mixin lineHeight {
+  line-height: 1.5rem;
+}
+
 html {
   font-size: 16px;
 }
@@ -8,9 +12,17 @@ html {
 body {
   background-color: $offWhite;
   color: $darkGrey;
+  font-family: Roboto, serif;
 }
 
 .aria-hidden {
   position: absolute;
   left: -1200px;
+}
+
+.list {
+  li {
+    margin-bottom: 0.5rem;
+    @include lineHeight;
+  }
 }
