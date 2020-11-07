@@ -1,3 +1,6 @@
+$headerColor: #8ecae6;
+$navItemColors: #023047;
+
 .header {
   display: flex;
   width: 100%;
@@ -7,6 +10,13 @@
   &__logo {
     height: 3rem;
     width: 3rem;
+  }
+
+  &-container {
+    height: 6rem;
+    background-color: $headerColor;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -26,21 +36,11 @@
     display: flex;
     align-items: center;
 
-    color: #121212;
+    //color: #121212;
+    color: $navItemColors;
     font-family: "Archivo Black", sans-serif;
     font-size: 1.5rem;
     opacity: 0.85;
-
-    img {
-      height: auto;
-      width: 1.2rem;
-      margin-right: 0.25rem;
-
-      @media screen and (max-width: 600px) {
-        transition: 0.5s;
-        width: 2rem
-      }
-    }
 
     .aria-link {
       @media screen and (max-width: 600px) {
@@ -55,6 +55,28 @@
     &:hover {
       opacity: 0.7;
     }
+  }
 
+  &__image {
+    height: auto;
+    width: 1.2rem;
+    margin-right: 0.25rem;
+
+    .svg--bg-color {
+      fill: $headerColor;
+    }
+
+    .svg-fill--foreground-color {
+      fill: $navItemColors;
+    }
+    .svg-stroke--foreground-color {
+      stroke: $navItemColors;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      transition: 0.5s;
+      width: 2rem
+    }
   }
 }
