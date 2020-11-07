@@ -1,10 +1,13 @@
 .profile {
+  margin-top: 2rem;
   >div {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media screen {
-
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
     }
   }
 
@@ -13,7 +16,11 @@
     grid-column: 1;
     font-size: 6rem;
     margin: 0 0 0 auto;
-    align-self: flex-end;
+
+    @media screen and (max-width: 600px) {
+      order: 2;
+      margin: 0;
+    }
   }
 
   &__summary {
@@ -23,6 +30,12 @@
     padding: 0;
     text-align: right;
     font-size: 0.85rem;
+
+    @media screen and (max-width: 600px) {
+      order: 3;
+      margin: 0;
+      text-align: left;
+    }
   }
 
   &__image {
@@ -34,6 +47,12 @@
     justify-content: center;
 
     width: 15rem;
+
+    @media screen and (max-width: 600px) {
+      order: 1;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     img {
       height: auto;

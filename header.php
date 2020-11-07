@@ -6,8 +6,8 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
-    <a href="<?php echo site_url(); ?>">
+<header class="header">
+    <a class="logo" href="<?php echo site_url(); ?>">
         <div class="aria-hidden">Home</div>
         <img class="logo header__logo" src="<?php echo get_theme_file_uri('/images/logo.svg') ?>" alt="Back to home" />
     </a>
