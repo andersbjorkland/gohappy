@@ -1,4 +1,5 @@
-import "../css/styles.css"
+import "../css/styles.css";
+
 
 // Our modules / classes
 // import MobileMenu from "./modules/MobileMenu"
