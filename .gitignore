@@ -1,7 +1,7 @@
 /.idea/
 /node_modules/
-*.css
-*.css.map
+/assets/css/*.css
+/assets/css/*.css.map
 
 /bundled-assets/
 /build/
