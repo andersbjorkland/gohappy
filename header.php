@@ -73,7 +73,7 @@
                 </svg>
                 <div class="aria-link">Portfolio</div>
             </a>
-            <a class="nav__item" href="#">
+            <a class="nav__item <?php if (get_post_type() === 'post') echo 'active'; ?>" href="#">
                 <svg class="nav__image" xmlns="http://www.w3.org/2000/svg" width="35.572" height="50" viewBox="0 0 35.572 50">
                     <g id="Boxes_Container" data-name="Boxes Container" transform="translate(-899.087 -328.398)">
                         <rect id="Rectangle_22" data-name="Rectangle 22" width="35" height="50" transform="translate(899.486 328.398)" fill="none"/>
@@ -130,7 +130,6 @@
                         </g>
                     </g>
                 </svg>
-
                 <div class="aria-link">About</div>
             </a>
         </nav>

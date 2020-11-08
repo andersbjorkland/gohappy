@@ -1,5 +1,3 @@
-$offWhite: #fdfcfd;
-$darkGrey: #5a5a5a;
 
 @mixin lineHeight {
   line-height: 1.5rem;
@@ -11,7 +9,7 @@ html {
 
 body {
   background-color: $offWhite;
-  color: $darkGrey;
+  color: $textMainColor;
   font-family: Roboto, serif;
   margin: 0;
 }

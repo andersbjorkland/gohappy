@@ -1,7 +1,16 @@
 .content {
+  &-container {
+    max-width: $contentMaxWidth;
+    margin: 0 auto;
+    padding-top: 3rem;
+
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-gap: 3rem;
+  }
+
   max-width: $contentMaxWidth;
   margin: 0 auto;
-
 
   &__list {
     margin-top: 0;
