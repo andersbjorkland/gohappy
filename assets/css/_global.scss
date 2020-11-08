@@ -25,3 +25,7 @@ body {
     @include lineHeight;
   }
 }
+
+time {
+  font-family: monospace;
+}

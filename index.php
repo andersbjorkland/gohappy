@@ -11,6 +11,7 @@ while(have_posts()) {
     <div class="content">
         <div class="content__post">
             <h1><?php the_title(); ?></h1>
+            <time><?php the_date(); ?></time>
             <?php the_content(); ?>
         </div>
     </div>

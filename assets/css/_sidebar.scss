@@ -9,16 +9,12 @@
   }
 
   &__item {
-    color: $navItemColors;
     width: fit-content;
     text-decoration: none;
 
     h3 {
+      color: $textMainColor;
       margin-bottom: 0;
-    }
-    time {
-      text-decoration: none;
-      font-family: monospace;
     }
     p {
       text-decoration: none;
@@ -38,7 +34,7 @@
     &-active {
 
       h3 {
-        text-decoration: underline;
+        font-style: italic;
       }
     }
   }
