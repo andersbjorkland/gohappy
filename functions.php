@@ -1,8 +1,9 @@
 <?php
 
 function theme_files() {
-	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:100,300,300i,400,500;700' );
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Tangerine:400,700|Raleway:100,100i,200,200i,300,300i,400,400i,900,900i|Roboto:100,300,300i,400,500;700' );
+	wp_enqueue_script( 'font-awesome', '//kit.fontawesome.com/44dcb31394.js' );
+	//wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/5.7/css/font-awesome.min.css' );
 
 	if ( strstr( $_SERVER['SERVER_NAME'], 'andersbjorkland.local' ) ) {
 		wp_enqueue_script( 'main-university-js', 'http://localhost:3000/bundled.js', null, '1.0', true );

@@ -1,0 +1,25 @@
+.feature {
+  &-grid {
+    width: 100%;
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0.5rem;
+    color: $oceanDeepBlue;
+
+    p {
+      color: $oceanDeepBlue;
+      margin: 0;
+    }
+
+    &--2col {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+  }
+}

@@ -1,5 +1,6 @@
-$headerColor: #8ecae6;
-$navItemColors: #023047;
+$headerColor: #FFFFFF;
+$navItemColors: $oceanDeepBlue;
+$activeNavColor: $deepCherry;
 
 .header {
   display: flex;
@@ -8,12 +9,14 @@ $navItemColors: #023047;
   margin: 0 auto;
 
   &__logo {
-    height: 3rem;
-    width: 3rem;
+    height: auto;
+    width: 3.5rem;
+    opacity: 0.08;
   }
 
   &-container {
-    height: 6rem;
+    padding: 0 8px;
+    height: $headerHeight;
     background-color: $headerColor;
     display: flex;
     align-items: center;
@@ -21,16 +24,11 @@ $navItemColors: #023047;
 }
 
 .nav {
-  padding-left: 4rem;
   margin-left: auto;
+  padding-top: 1rem;
 
   display: flex;
-  justify-content: flex-end;
-
   width: 30rem;
-  @media screen and (max-width: 600px) {
-    width: 20rem;
-  }
 
   &__item {
     display: flex;
@@ -43,14 +41,8 @@ $navItemColors: #023047;
     font-size: 1.2rem;
     opacity: 1;
 
-    .aria-link {
-      @media screen and (max-width: 600px) {
-        position: absolute;
-        left: -1000px;
-      }
-    }
     &.active {
-      text-decoration: underline;
+      color: $activeNavColor;
     }
 
     &:hover {
@@ -74,10 +66,33 @@ $navItemColors: #023047;
       stroke: $navItemColors;
     }
 
+  }
+}
+.logo-container {
+  text-decoration: none;
 
-    @media screen and (max-width: 600px) {
-      transition: 0.5s;
-      width: 2rem
-    }
+}
+.brand {
+  color: $darkBlue;
+
+  &-container {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+  }
+
+  &__upper {
+    font-family: "Tangerine", "Segoe Script", cursive;
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+  &__lower {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+    top: -0.7rem;
   }
 }

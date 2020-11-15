@@ -1,17 +1,22 @@
-
-@mixin lineHeight {
-  line-height: 1.5rem;
-}
+$sideMargin: 8px;
+$globalFontFamily: Raleway, sans-serif;
 
 html {
-  font-size: 16px;
 }
 
 body {
-  background-color: $offWhite;
-  color: $textMainColor;
-  font-family: Roboto, serif;
   margin: 0;
+  font-family: $globalFontFamily;
+}
+
+.side-margin {
+  margin-left: $sideMargin;
+  margin-right: $sideMargin;
+}
+
+.side-padding {
+  padding-left: $sideMargin;
+  padding-right: $sideMargin;
 }
 
 .aria-hidden {
@@ -21,11 +26,16 @@ body {
 
 .list {
   li {
-    margin-bottom: 0.5rem;
-    @include lineHeight;
   }
 }
 
 time {
-  font-family: monospace;
+}
+
+p {
+  color: $darkBlue;
+}
+
+.hidden {
+  display: none;
 }

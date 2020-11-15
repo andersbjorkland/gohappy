@@ -1,4 +1,5 @@
 import "../css/styles.css";
+import FeatureHandle from "./FeatureHandle";
 
 
 // Our modules / classes
@@ -8,6 +9,7 @@ import "../css/styles.css";
 
 // Instantiate a new object using our modules/classes
 // let mobileMenu = new MobileMenu()
+const featureHandle = new FeatureHandle();
 
 
 // Allow new JS and CSS to load in browser without a traditional page refresh

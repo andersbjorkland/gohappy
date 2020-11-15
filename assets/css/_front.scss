@@ -1,0 +1,137 @@
+.front {
+  &-intro {
+    min-height: calc(100vh - #{$headerHeight});
+    background-color: $glumGrey;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+      margin-top: 3.2rem;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      text-shadow:
+              3px 3px $glumGrey,
+              3px -3px $glumGrey,
+              -3px 3px $glumGrey,
+              -3px -3px $glumGrey;
+    }
+
+    &__proposition {
+      position: relative;
+      width: 14rem;
+      margin-top: 1rem;
+
+      h2 {
+        position: relative;
+        z-index: 10;
+        color: $oceanDeepBlue;
+        font-size: 1.4rem;
+      }
+      p {
+        position: relative;
+        z-index: 10;
+
+        color: $oceanDeepBlue;
+        font-weight: 300;
+        margin: 0.5rem 0;
+      }
+      .sub-heading {
+
+        margin: 0;
+        font-size: 1.15rem;
+      }
+
+      &--top {
+        align-self: flex-start;
+      }
+      &--middle {
+        align-self: center;
+
+      }
+      &--bottom {
+        align-self: flex-end;
+      }
+    }
+    &__bg-number {
+      position: absolute;
+      top: -3.3rem;
+      z-index: 1;
+
+      font-weight: 900;
+      font-size: 9.5rem;
+      color: white;
+
+    }
+  }
+
+  &-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h2 {
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 10;
+    }
+    .image {
+      z-index: 10;
+    }
+    p {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &-button {
+    position: relative;
+    z-index: 10;
+    height: 2rem;
+
+    background-color: white;
+    border: none;
+    color: $oceanDeepBlue;
+    font-size: 1.05rem;
+    &.active {
+      i, p {
+        color: $darkBlue;
+      }
+    }
+  }
+}
+
+.section-break {
+  height: 4rem;
+}
+
+.case {
+  $caseWidth: 18rem;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    height: auto;
+    width: $caseWidth;
+  }
+
+  &__portfolio {
+    width: $caseWidth;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    font-size: 1rem;
+
+  }
+
+}
+
+
+
+.description {
+  font-size: 1.05rem;
+}

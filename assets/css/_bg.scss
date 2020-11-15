@@ -1,0 +1,45 @@
+.bg {
+  position: relative;
+
+  &-circle {
+    &--outline {
+      height: 10.5rem;
+      width: 10.5rem;
+      border-style: solid;
+      border-color: $lightBlue;
+      border-width: 0.4rem;
+      border-radius: 50%;
+
+      position: absolute;
+      z-index: 1;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    &--full {
+      height: 12rem;
+      width: 12rem;
+      background-color: $lightBlue;
+      border-radius: 50%;
+
+      position: absolute;
+      z-index: 1;
+      left: -11rem;
+      bottom: -8rem;
+    }
+  }
+
+  &-image, &-image img {
+    position: absolute;
+    z-index: 1;
+
+    &--tr {
+      top:0;
+      right:0;
+    }
+    &--atr {
+      top:-2rem;
+      right:0;
+    }
+  }
+}
