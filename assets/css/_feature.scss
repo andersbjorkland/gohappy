@@ -22,4 +22,12 @@
     }
 
   }
+
+  &__description {
+    background-color: $descriptionBoxColor;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 1rem;
+    transition: 1s;
+  }
 }

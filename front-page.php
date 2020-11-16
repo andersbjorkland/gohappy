@@ -60,13 +60,37 @@ get_header();
             Learn more about the features we can build into your website: From a landing page to a full fledged content
             management system.
         </p>
-        <p id="feature--landing-page" class="mt0 hidden">
+        <p id="feature--landing-page" class="mt0 feature__description hidden" aria-hidden="true">
             Your value proposition in focus. Reveal your product to grow attention and turn interest into
             purchase.
         </p>
-        <p id="feature--blog" class="mt0 hidden">
+        <p id="feature--blog" class="mt0 feature__description hidden" aria-hidden="true">
             Regular content creation with a blog is a good way to build a relationship with your stakeholders and customers.
             It's also great for SEO purposes.
+        </p>
+        <p id="feature--contact" class="mt0 feature__description hidden" aria-hidden="true">
+            It's good to have an email to be reached at. It's even better to have a contact form directly on your page.
+            Minimize the hurdles for your customers to reach you.
+        </p>
+        <p id="feature--gallery" class="mt0 feature__description hidden" aria-hidden="true">
+            Do you want to show off your work or let your customers know more about your business. A picture says more than
+            a thousand words, show off them in a gallery on your website.
+        </p>
+        <p id="feature--logo" class="mt0 feature__description hidden" aria-hidden="true">
+            Let your business identity shine with a logo tailored to your business. A logo is something unique yet simple:
+            it speaks on who you are.
+        </p>
+        <p id="feature--design" class="mt0 feature__description hidden" aria-hidden="true">
+            A visitor's impression of you is made within 8 seconds of visiting your website. So make the most of it!
+            Web Design tailored to YOUR customers is the way to go.
+        </p>
+        <p id="feature--cms" class="mt0 feature__description hidden" aria-hidden="true">
+            If you want to update content for your website a CMS is the way to go. More than just blogging, a CMS let's you
+            add or edit any component of your website that you need.
+        </p>
+        <p id="feature--api" class="mt0 feature__description hidden" aria-hidden="true">
+            Are you looking for more flexibility to your webservices. Perhaps you are looking to serve data to third-party apps,
+            let's set up an API for your needs.
         </p>
     </div>
     <div class="feature-grid feature-grid--2col">
