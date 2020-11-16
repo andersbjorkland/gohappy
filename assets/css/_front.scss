@@ -94,9 +94,7 @@
     color: $oceanDeepBlue;
     font-size: 1.05rem;
     &.active {
-      i, p {
-        color: $darkBlue;
-      }
+      color: $darkBlue;
     }
   }
 }

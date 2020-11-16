@@ -96,35 +96,35 @@ get_header();
     <div class="feature-grid feature-grid--2col">
         <button id="landing-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-home"></i>
-            <p>Landing Page</p>
+            Landing Page
         </button>
         <button id="blog-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-blog"></i>
-            <p>Blog</p>
+            Blog
         </button>
         <button id="contact-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-envelope-open-text"></i>
-            <p>Contact Form</p>
+            Contact Form
         </button>
         <button id="gallery-feature-btn" class="feature-grid__item front-button">
             <i class="far fa-images"></i>
-            <p>Gallery</p>
+            Gallery
         </button>
         <button id="logo-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-magic"></i>
-            <p>Logo</p>
+            Logo
         </button>
         <button id="design-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-paint-brush"></i>
-            <p>Web design</p>
+            Web design
         </button>
         <button id="cms-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-laptop-code"></i>
-            <p>Custom CMS</p>
+            Custom CMS
         </button>
         <button id="api-feature-btn" class="feature-grid__item front-button">
             <i class="fas fa-server"></i>
-            <p>API</p>
+            API
         </button>
     </div>
 </section>
