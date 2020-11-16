@@ -129,6 +129,80 @@ get_header();
     </div>
 </section>
 
+<section class="front-section side-padding pt4">
+    <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-full.svg'); ?>" class="bg-image bg-image--tr" alt="" aria-hidden="true"/>
+    <h2 class="mt4">Technologies</h2>
+    <div class="description feature-box">
+        <p id="tech--general" class="mt0">
+            If you have a preference, or are of a curious minds, have a glimpse at the technologies used to build a website.
+        </p>
+        <p id="tech--wordpress" class="mt0 feature__description hidden" aria-hidden="true">
+            WordPress is perfect for handling blog writing and editing, but can be expanded with many other features.
+        </p>
+        <p id="tech--symfony" class="mt0 feature__description hidden" aria-hidden="true">
+            Symfony is a very flexible system to build your backend. It's easy to expand with a blogging feature as well
+            as API if that is needed.
+        </p>
+        <p id="tech--database" class="mt0 feature__description hidden" aria-hidden="true">
+            For most content management, a database is needed. MySQL and the related MariaDB can handle huge sets of data.
+            When working with WordPress or Symfony, a database will most often be used to store data.
+        </p>
+        <p id="tech--php" class="mt0 feature__description hidden" aria-hidden="true">
+            PHP is the backend language of choice for many web applications. WordPress and Symfony both uses PHP, and the
+            language itself offers many features.
+        </p>
+        <p id="tech--html" class="mt0 feature__description hidden" aria-hidden="true">
+            All websites are built with a structure for its content. HTML is the technology used to do this. The structure
+            gives meaning to the content and needs to be maintained to be relevant for search engines.
+        </p>
+        <p id="tech--css" class="mt0 feature__description hidden" aria-hidden="true">
+            The beauty and the readability of a website depends on great style. CSS is used to provide the style. To write
+            CSS even faster and maintainable, a language like SASS is used.
+        </p>
+        <p id="tech--js" class="mt0 feature__description hidden" aria-hidden="true">
+            For improved user experience, a language like JavaScript is used. This provides the behaviour to a website.
+            It allows for text or images to be swapped by the press of a button.
+        </p>
+        <p id="tech--react" class="mt0 feature__description hidden" aria-hidden="true">
+            If visitors are expected to interact a lot with the website, a library and a tool like React and Redux can be
+            used to create a seamless user experience.
+        </p>
+    </div>
+    <div class="feature-grid feature-grid--2col">
+        <button id="wordpress-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-wordpress"></i>
+            WordPress
+        </button>
+        <button id="symfony-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-symfony"></i>
+            Symfony
+        </button>
+        <button id="database-tech-btn" class="feature-grid__item front-button">
+            <i class="fas fa-server"></i>
+            Database
+        </button>
+        <button id="php-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-php"></i>
+            PHP
+        </button>
+        <button id="html-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-html5"></i>
+            HTML
+        </button>
+        <button id="css-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-css3"></i>
+            CSS
+        </button>
+        <button id="js-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-js"></i>
+            JS
+        </button>
+        <button id="react-tech-btn" class="feature-grid__item front-button">
+            <i class="fab fa-react"></i>
+            React
+        </button>
+    </div>
+</section>
 <?php
 get_footer();
 ?>
