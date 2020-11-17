@@ -8,6 +8,7 @@ $offBlack: #222222;
  * Fetched from https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c
  */
 $cherry: #EF476F;
+$whiteCherry: #FFF8F9;
 $deepCherry: #de2350;
 $orange: #FFD166;
 $mintGreen: #06D6A0;
@@ -39,7 +40,9 @@ $contentMaxWidth: 55rem;
 @import "sidebar";
 @import "bg";
 @import "margins";
+@import "paddings";
 
 // Frontpage
 @import "front";
 @import "feature";
+@import "contact";

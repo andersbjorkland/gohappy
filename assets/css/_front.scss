@@ -71,6 +71,7 @@
     position: relative;
 
     h2 {
+      margin-top: 4rem;
       margin-bottom: 1rem;
       position: relative;
       z-index: 10;
@@ -93,8 +94,10 @@
     border: none;
     color: $oceanDeepBlue;
     font-size: 1.05rem;
+    box-shadow: 3px 3px 8px #f6f6f6, -3px -3px 6px #fbfbfb;
     &.active {
       color: $darkBlue;
+      box-shadow: none;
     }
   }
 }
@@ -118,10 +121,11 @@
 
   &__portfolio {
     width: $caseWidth;
+    margin-top: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
+    gap: 0.5rem;
     font-size: 1rem;
 
   }

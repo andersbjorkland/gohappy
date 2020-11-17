@@ -46,15 +46,14 @@ get_header();
         </div>
         <div class="description">
             <p>Sleek look and feel for the book lovers out there. Review books and add favorites, this website handles registering
-            and authenticating users as well as searching for the book they want. The Book Arena is built with backend components
-            and an easy frontend interface.</p>
+            and authenticating users to let them in to join the fun.</p>
         </div>
     </div>
     <div class="bg-circle--full"></div>
 </section>
 <section class="front-section side-padding pt4">
     <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-full.svg'); ?>" class="bg-image bg-image--tr" alt="" aria-hidden="true"/>
-    <h2 class="mt4">Feature list</h2>
+    <h2>Feature list</h2>
     <div class="description feature-box">
         <p id="feature--general" class="mt0">
             Learn more about the features we can build into your website: From a landing page to a full fledged content
@@ -130,8 +129,7 @@ get_header();
 </section>
 
 <section class="front-section side-padding pt4">
-    <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-full.svg'); ?>" class="bg-image bg-image--tr" alt="" aria-hidden="true"/>
-    <h2 class="mt4">Technologies</h2>
+    <h2>Technologies</h2>
     <div class="description feature-box">
         <p id="tech--general" class="mt0">
             If you have a preference, or are of a curious minds, have a glimpse at the technologies used to build a website.
@@ -202,6 +200,25 @@ get_header();
             React
         </button>
     </div>
+</section>
+<section class="front-section side-padding pt4">
+    <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-breaker.svg'); ?>" class="bg-image bg-image--tl" alt="" aria-hidden="true"/>
+    <h2>Contact</h2>
+    <form class="contact__form" action="">
+        <label>
+            Name
+            <input name="name-input" type="text">
+        </label>
+        <label>
+            Email
+            <input name="email-input" type="email">
+        </label>
+        <label>
+            Message
+            <textarea name="message-input" cols="30" rows="7"></textarea>
+        </label>
+        <button class="contact__button" type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+    </form>
 </section>
 <?php
 get_footer();
