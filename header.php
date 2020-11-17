@@ -10,7 +10,7 @@
     <header class="header">
         <a class="logo-container" href="<?php echo site_url(); ?>">
             <div class="aria-hidden">Home</div>
-            <img class="logo header__logo" src="<?php echo get_theme_file_uri('/images/logo.svg') ?>" alt="Back to home" />
+            <img class="logo header__logo header__logo--o08" src="<?php echo get_theme_file_uri('/images/logo.svg') ?>" alt="Back to home" />
             <div class="brand brand-container">
                 <span class="brand brand__upper">Salve</span>
                 <span class="brand brand__lower">digital</span>

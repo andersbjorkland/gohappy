@@ -1,0 +1,33 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: $darkBlue;
+  height: 9rem;
+
+  &__logo {
+    height: auto;
+    width: 4rem;
+    margin-left: 1.7rem;
+    position: relative;
+    top: 1rem;
+
+    &--o08 {
+      opacity: 0.08;
+    }
+
+    &--o3 {
+      opacity: 0.3;
+    }
+  }
+
+  &__summary {
+    position: relative;
+    top: -2.5rem;
+    p {
+      color: white;
+      margin: 0 0 0.3rem 0;
+      font-weight: 200;
+      font-size: 0.8rem;
+    }
+  }
+}

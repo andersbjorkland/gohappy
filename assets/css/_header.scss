@@ -11,7 +11,16 @@ $activeNavColor: $deepCherry;
   &__logo {
     height: auto;
     width: 3.5rem;
-    opacity: 0.08;
+    position: relative;
+    top: 1.7rem;
+
+    &--o08 {
+      opacity: 0.08;
+    }
+
+    &--o3 {
+      opacity: 0.3;
+    }
   }
 
   &-container {
@@ -71,28 +80,4 @@ $activeNavColor: $deepCherry;
 .logo-container {
   text-decoration: none;
 
-}
-.brand {
-  color: $darkBlue;
-
-  &-container {
-    position: absolute;
-    top: 1rem;
-    display: flex;
-    flex-direction: column;
-    height: 3rem;
-  }
-
-  &__upper {
-    font-family: "Tangerine", "Segoe Script", cursive;
-    font-size: 2.1rem;
-    font-weight: bold;
-  }
-  &__lower {
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    position: relative;
-    top: -0.7rem;
-  }
 }

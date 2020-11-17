@@ -33,7 +33,7 @@ get_header();
         background-repeat: no-repeat;
         background-repeat-x: repeat;
         "></div>
-<section class="front-section side-padding">
+<section class="front-section side-padding pt2">
     <div class="bg-circle--outline"></div>
     <h2>Case studies</h2>
     <div class="case-container">
@@ -201,7 +201,7 @@ get_header();
         </button>
     </div>
 </section>
-<section class="front-section side-padding pt4">
+<section class="front-section side-padding pt4 pb4">
     <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-breaker.svg'); ?>" class="bg-image bg-image--tl" alt="" aria-hidden="true"/>
     <h2>Contact</h2>
     <?php
