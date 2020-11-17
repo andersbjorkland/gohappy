@@ -204,21 +204,9 @@ get_header();
 <section class="front-section side-padding pt4">
     <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-breaker.svg'); ?>" class="bg-image bg-image--tl" alt="" aria-hidden="true"/>
     <h2>Contact</h2>
-    <form class="contact__form" action="">
-        <label>
-            Name
-            <input name="name-input" type="text">
-        </label>
-        <label>
-            Email
-            <input name="email-input" type="email">
-        </label>
-        <label>
-            Message
-            <textarea name="message-input" cols="30" rows="7"></textarea>
-        </label>
-        <button class="contact__button" type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
-    </form>
+    <?php
+        echo apply_shortcodes('[contact-form-7 id="50" title="Contact form 1" html_class="contact__form"]');
+     ?>
 </section>
 <?php
 get_footer();
