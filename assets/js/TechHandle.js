@@ -3,7 +3,6 @@ class TechHandle {
         this.clickHandle = this.clickHandle.bind(this);
 
         // tech descriptions
-        this.general = document.getElementById("tech--general");
         this.wordpress = document.getElementById("tech--wordpress");
         this.symfony = document.getElementById("tech--symfony");
         this.database = document.getElementById("tech--database");
@@ -43,59 +42,42 @@ class TechHandle {
         event.stopPropagation();
         switch (event.currentTarget.id) {
             case "wordpress-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.wordpressBtn);
                 this.showDescription(this.wordpress);
                 break;
             case "symfony-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.symfonyBtn);
                 this.showDescription(this.symfony);
                 break;
             case "database-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.databaseBtn);
                 this.showDescription(this.database);
                 break;
             case "php-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.phpBtn);
                 this.showDescription(this.php);
                 break;
             case "html-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.htmlBtn);
                 this.showDescription(this.html);
                 break;
             case "css-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.cssBtn);
                 this.showDescription(this.css);
                 break;
             case "js-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.jsBtn);
                 this.showDescription(this.js);
                 break;
             case "react-tech-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.reactBtn);
                 this.showDescription(this.react);
                 break;
             default:
                 if (this.activeBtn) {
-                    this.hideGeneral(false);
                     this.changeActiveBtn(this.activeBtn);
                     this.showDescription(this.activeDescription);
                 }
-        }
-    }
-
-    hideGeneral(shouldHide) {
-        if (shouldHide) {
-            this.general.classList.add("hidden");
-        } else {
-            this.general.classList.remove("hidden");
         }
     }
 

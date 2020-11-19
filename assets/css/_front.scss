@@ -69,6 +69,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    min-height: 28rem;
 
     h2 {
       margin-top: 4rem;
@@ -104,36 +105,4 @@
 
 .section-break {
   height: 4rem;
-}
-
-.case {
-  $caseWidth: 18rem;
-  &-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__image {
-    height: auto;
-    width: $caseWidth;
-  }
-
-  &__portfolio {
-    width: $caseWidth;
-    margin-top: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.5rem;
-    font-size: 1rem;
-
-  }
-
-}
-
-
-
-.description {
-  font-size: 1.05rem;
 }

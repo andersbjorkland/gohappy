@@ -1,0 +1,8 @@
+
+// Column widths, how many columns an element should occupy
+
+.cw {
+  &2 {
+    grid-column: 1/3;
+  }
+}

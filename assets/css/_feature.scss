@@ -7,7 +7,6 @@
     color: $oceanDeepBlue;
 
     p {
-      color: $oceanDeepBlue;
       margin: 0;
     }
 
@@ -29,5 +28,6 @@
     color: white;
     border-radius: 1rem;
     transition: 1s;
+    height: fit-content;
   }
 }

@@ -21,6 +21,9 @@ function expandFeatures() {
 	add_theme_support('post-thumbnails');
 
 	add_image_size('selfPortrait', 500, 500, true);
+	add_image_size('smallCase', 380, 200, true);
+	add_image_size('mediumCase', 760, 400, true);
+	add_image_size('standardCase', 1200, 630, true);
 }
 
 add_action('after_setup_theme', 'expandFeatures');

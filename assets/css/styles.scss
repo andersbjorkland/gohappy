@@ -43,8 +43,10 @@ $contentMaxWidth: 55rem;
 @import "margins";
 @import "paddings";
 @import "brand";
+@import "columns";
 
 // Frontpage
 @import "front";
+@import "case";
 @import "feature";
 @import "contact";

@@ -3,7 +3,6 @@ class FeatureHandle {
         this.clickHandle = this.clickHandle.bind(this);
 
         // Feature descriptions
-        this.general = document.getElementById("feature--general");
         this.landing = document.getElementById("feature--landing-page");
         this.blog = document.getElementById("feature--blog");
         this.contact = document.getElementById("feature--contact");
@@ -43,59 +42,42 @@ class FeatureHandle {
         event.stopPropagation();
         switch (event.currentTarget.id) {
             case "landing-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.landingBtn);
                 this.showDescription(this.landing);
                 break;
             case "blog-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.blogBtn);
                 this.showDescription(this.blog);
                 break;
             case "contact-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.contactBtn);
                 this.showDescription(this.contact);
                 break;
             case "gallery-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.galleryBtn);
                 this.showDescription(this.gallery);
                 break;
             case "logo-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.logoBtn);
                 this.showDescription(this.logo);
                 break;
             case "design-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.designBtn);
                 this.showDescription(this.design);
                 break;
             case "cms-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.cmsBtn);
                 this.showDescription(this.cms);
                 break;
             case "api-feature-btn":
-                this.hideGeneral(true);
                 this.changeActiveBtn(this.apiBtn);
                 this.showDescription(this.api);
                 break;
             default:
                 if (this.activeBtn) {
-                    this.hideGeneral(false);
                     this.changeActiveBtn(this.activeBtn);
                     this.showDescription(this.activeDescription);
                 }
-        }
-    }
-
-    hideGeneral(shouldHide) {
-        if (shouldHide) {
-            this.general.classList.add("hidden");
-        } else {
-            this.general.classList.remove("hidden");
         }
     }
 
@@ -104,7 +86,6 @@ class FeatureHandle {
             this.activeDescription.classList.add("hidden");
             this.activeDescription.setAttribute('aria-hidden', 'true');
             this.activeDescription = false;
-            this.hideGeneral(false);
         } else {
             if (this.activeDescription && this.activeDescription !== element) {
                 this.activeDescription.classList.add("hidden");
