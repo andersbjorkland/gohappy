@@ -12,6 +12,7 @@ $whiteCherry: #FFF8F9;
 $deepCherry: #de2350;
 $orange: #FFD166;
 $mintGreen: #06D6A0;
+$closeWhiteBlue: #f3fcff;
 $lightBlue: #E6F3F7;
 $oceanBlue: #118AB2;
 $oceanDeepBlue: #0e7496;
@@ -23,13 +24,20 @@ $glumGrey: #EFF2F3;
 $textMainColor: $darkGrey;
 $headingsColor: $deepCherry;
 $descriptionBoxColor: $midBlue;
+$boxShadowColor: rgba(100,100,100,0.2);
 
 // Heights
 $headerHeight: 4rem;
 
 // Widths
 $marginHorizontal: 2rem;
-$contentMaxWidth: 55rem;
+$contentMaxWidth: 77rem;
+
+// Media break-points
+$smallScreen: 645px;
+$mediumScreen: 800px;
+$largeScreen: 1000px;
+$xlScreen: 1300px;
 
 @import "global";
 @import "header";
@@ -44,6 +52,7 @@ $contentMaxWidth: 55rem;
 @import "paddings";
 @import "brand";
 @import "columns";
+@import "button";
 
 // Frontpage
 @import "front";

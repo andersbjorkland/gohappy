@@ -1,0 +1,21 @@
+.button {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 5px $boxShadowColor;
+  display: flex;
+  gap: 0.5rem;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  &__contact {
+    color: white;
+    background-color: $cherry;
+    display: none;
+
+    @media screen and (min-width: $mediumScreen) {
+      display: block;
+    }
+  }
+}

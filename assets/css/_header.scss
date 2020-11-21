@@ -7,6 +7,12 @@ $activeNavColor: $deepCherry;
   width: 100%;
   max-width: $contentMaxWidth;
   margin: 0 auto;
+  transition: 0.4s;
+
+  @media screen and (min-width: $smallScreen) {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
 
   &__logo {
     height: auto;
@@ -37,7 +43,6 @@ $activeNavColor: $deepCherry;
   padding-top: 1rem;
 
   display: flex;
-  width: 30rem;
 
   &__item {
     display: flex;

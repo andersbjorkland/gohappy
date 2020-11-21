@@ -1,7 +1,8 @@
-$sideMargin: 8px;
+$sideMargin: 8vw;
 $globalFontFamily: Raleway, sans-serif;
 
 html {
+  scroll-behavior: smooth;
 }
 
 body {

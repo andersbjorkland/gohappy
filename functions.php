@@ -10,7 +10,7 @@ function theme_files() {
 	} else {
 		wp_enqueue_script( 'our-vendors.js', get_theme_file_uri( '/bundled-assets/undefined' ), null, '1.0', true );
 		wp_enqueue_script( 'main-scripts-js', get_theme_file_uri( '/bundled-assets/scripts.9fb62b83c6d010909330.js' ), null, '1.0', true );
-		wp_enqueue_style( 'our-main-styles', get_theme_file_uri( '/bundled-assets/styles.9fb62b83c6d010909330.css' ) );
+		//wp_enqueue_style( 'our-main-styles', get_theme_file_uri( '/bundled-assets/styles.9fb62b83c6d010909330.css' ) );
 	}
 }
 

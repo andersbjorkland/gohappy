@@ -2,7 +2,11 @@
   position: absolute;
   width: 100%;
   background-color: $darkBlue;
-  height: 9rem;
+
+  &-container {
+    height: 9rem;
+
+  }
 
   &__logo {
     height: auto;

@@ -42,37 +42,64 @@ while ($caseProjects->have_posts()) {
 
 ?>
 
-<section class="front-intro side-padding" style="
-        background-image: url('<?php echo get_theme_file_uri('/images/bg/semi-tri.svg'); ?>');
-        background-repeat: no-repeat;
-        background-position-x: right;
-        ">
+<style>
 
-    <h1 class="front-intro__heading">Websites for your brand identity</h1>
-    <div class="front-intro__proposition front-intro__proposition--top">
-        <h2>Design</h2>
-        <p class="sub-heading">for your brand</p>
-        <p>Show your flair and let the customers know you and your value proposition.</p>
-        <div class="front-intro__bg-number">1</div>
-    </div>
-    <div class="front-intro__proposition front-intro__proposition--middle">
-        <h2>Develop</h2>
-        <p class="sub-heading">in cooperation</p>
-        <p>We code your vision into reality. Follow along in each step.</p>
-        <div class="front-intro__bg-number">2</div>
-    </div>
-    <div class="front-intro__proposition front-intro__proposition--bottom">
-        <h2>Deploy</h2>
-        <p class="sub-heading">your online presence</p>
-        <p>Get your fresh new website up and running.</p>
-        <div class="front-intro__bg-number">3</div>
-    </div>
-</section>
-<div class="section-break" style="
+    .striped {
         background-image: url('<?php echo get_theme_file_uri('/images/bg/striped-breaker.svg'); ?>');
         background-repeat: no-repeat;
         background-repeat-x: repeat;
-        "></div>
+    }
+
+    @media screen and (min-width: 645px) {
+        .section-break--sm-screen {
+            background-image: none;
+        }
+    }
+</style>
+
+<section class="front-intro side-padding">
+    <div class="front-intro__heading-container">
+        <h1 class="front-intro__heading">Websites for your brand identity</h1>
+        <p class="front-intro__subheading">Improved professional online presence</p>
+        <a class="button button__contact" href="#contact-heading"><i class="fas fa-paper-plane"></i>Contact</a>
+    </div>
+    <div class="front-intro__proposition-container">
+        <div id="design-proposition" class="front-intro__proposition front-intro__proposition--top">
+            <div class="front-intro__proposition-header">
+                <h2>Design</h2>
+                <p class="sub-heading">for your brand</p>
+            </div>
+            <div class="front-intro__proposition-content">
+                <img id="design-proposition-img" class="front-intro__proposition-image" src="/wp-content/themes/gohappy/images/propositions/design-sketch.png" alt="Sketch up a design" />
+                <p>Show your flair and let the customers know you and your value proposition.</p>
+            </div>
+            <div class="front-intro__bg-number">1</div>
+        </div>
+        <div id="develop-proposition" class="front-intro__proposition front-intro__proposition--middle">
+            <div class="front-intro__proposition-header">
+                <h2>Develop</h2>
+                <p class="sub-heading">in cooperation</p>
+            </div>
+            <div class="front-intro__proposition-content">
+                <img id="develop-proposition-img" class="front-intro__proposition-image" src="/wp-content/themes/gohappy/images/propositions/cooperation.png" alt="Handshake" />
+                <p>We code your vision into reality. Follow along in each step.</p>
+            </div>
+            <div class="front-intro__bg-number">2</div>
+        </div>
+        <div id="deploy-proposition" class="front-intro__proposition front-intro__proposition--bottom">
+            <div class="front-intro__proposition-header">
+                <h2>Deploy</h2>
+                <p class="sub-heading">your online presence</p>
+            </div>
+            <div class="front-intro__proposition-content">
+                <img id="deploy-proposition-img" class="front-intro__proposition-image" src="/wp-content/themes/gohappy/images/propositions/deployment.png" alt="Computer with code" />
+                <p>Get your fresh new website up and running.</p>
+            </div>
+            <div class="front-intro__bg-number">3</div>
+        </div>
+    </div>
+</section>
+<div class="striped section-break section-break--sm-screen"></div>
 <section class="front-section side-padding pt2">
     <div class="bg-circle--outline"></div>
     <h2>Case studies</h2>
@@ -85,6 +112,8 @@ while ($caseProjects->have_posts()) {
     </div>
     <div class="bg-circle--full"></div>
 </section>
+
+<!-- Features section -->
 <section class="front-section side-padding">
     <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-full.svg'); ?>" class="bg-image bg-image--tr" alt="" aria-hidden="true"/>
     <h2>Feature list</h2>
@@ -168,6 +197,7 @@ while ($caseProjects->have_posts()) {
     </div>
 </section>
 
+<!-- Technologies section -->
 <section class="front-section side-padding">
     <h2>Technologies</h2>
     <div class="description feature-box">
@@ -245,9 +275,11 @@ while ($caseProjects->have_posts()) {
         </p>
     </div>
 </section>
+
+<!-- Contact section -->
 <section class="front-section side-padding pt4 pb4">
-    <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-breaker.svg'); ?>" class="bg-image bg-image--tl" alt="" aria-hidden="true"/>
-    <h2>Contact</h2>
+    <img src="<?php echo get_theme_file_uri('/images/bg/simple-breaker.svg'); ?>" class="bg-image bg-image--tl bg-image--breaker" alt="" aria-hidden="true"/>
+    <h2 id="contact-heading">Contact</h2>
     <?php
         echo apply_shortcodes('[contact-form-7 id="50" title="Contact form 1" html_class="contact__form"]');
      ?>
