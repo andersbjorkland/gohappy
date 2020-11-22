@@ -1,33 +1,83 @@
 .feature {
+  &-container {
+    max-width: 40rem;
+    transition: 1s;
+
+    @media screen and (min-width: $mediumScreen) {
+      min-height: 40rem;
+    }
+
+    @media screen and (min-width: $xlScreen){
+      &#features-container {
+        margin-right: auto;
+      }
+      &#technologies-container {
+        margin-left: auto;
+      }
+    }
+  }
+
   &-grid {
     width: 100%;
+    max-width: 25rem;
+    margin: 2rem auto;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 0.5rem;
     color: $oceanDeepBlue;
 
-    p {
-      margin: 0;
+    @media screen and (min-width: $mediumScreen) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      max-width: unset;
     }
 
-    &--2col {
-      grid-template-columns: 1fr 1fr;
+    p {
+      margin: 0;
     }
 
     &__item {
       display: flex;
       align-items: center;
       gap: 0.3rem;
+
+      &:nth-child(even) {
+        margin-left: auto;
+
+        @media screen and (min-width: $mediumScreen) {
+          margin-left: initial;
+        }
+      }
     }
 
   }
 
   &__description {
     background-color: $descriptionBoxColor;
-    padding: 0.5rem;
+    padding: 0.8rem;
     color: white;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     transition: 1s;
     height: fit-content;
+    top: -0.6rem;
+
+    .md-show {
+      display: none;
+    }
+
+    .sub-heading {
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: $mediumScreen) {
+      grid-row: 3;
+      grid-column-end: 5;
+      border-radius: 1rem;
+
+      .md-show {
+        display: inline;
+      }
+    }
   }
 }

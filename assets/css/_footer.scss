@@ -1,11 +1,12 @@
 .footer {
   position: absolute;
   width: 100%;
-  background-color: $darkBlue;
+  background-color: #084559;
 
   &-container {
     height: 9rem;
-
+    background-color: $darkBlue;
+    padding: 1rem;
   }
 
   &__logo {

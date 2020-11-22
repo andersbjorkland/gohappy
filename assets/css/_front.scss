@@ -37,10 +37,12 @@
 
       &-container {
         @media screen and (min-width: $mediumScreen) {
+          margin-bottom: 4rem;
+          margin-top: 4rem;
           transition: 1s;
         }
         @media screen and (min-width: $xlScreen) {
-          margin-top: 4rem;
+          margin-top: 8rem;
         }
       }
 
@@ -125,10 +127,12 @@
           flex-direction: row;
           gap: 1rem;
           transition: 1s;
+          justify-content: space-around;
         }
 
         @media screen and (min-width: $xlScreen) {
           margin: auto 0;
+          justify-content: space-between;
         }
       }
 
@@ -230,6 +234,7 @@
       z-index: 10;
     }
     .image {
+      position: relative;
       z-index: 10;
     }
     p {
@@ -242,15 +247,44 @@
     position: relative;
     z-index: 10;
     min-height: 2rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 12rem;
 
     background-color: white;
     border: none;
     color: $oceanDeepBlue;
     font-size: 1.05rem;
+    text-align: left;
     box-shadow: 3px 3px 8px #f6f6f6, -3px -3px 6px #fbfbfb;
+
+    top: 0;
+    transition: 0.8s;
+
     &.active {
-      color: $darkBlue;
-      box-shadow: none;
+      color: white;
+      background-color: $oceanDeepBlue;
+      outline: none;
+
+      @media screen and (min-width: $mediumScreen) {
+        top: 0.5rem;
+      }
+    }
+
+    &.feature-grid__item {
+      @media screen and (min-width: $mediumScreen) {
+        width: 8rem;
+        height: 8rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+
+        i {
+          font-size: 3.5rem;
+        }
+      }
     }
   }
 }

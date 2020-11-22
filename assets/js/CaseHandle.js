@@ -5,6 +5,9 @@ class CaseHandle {
         this.images = [];
         this.descriptions = [];
         this.buttons = [];
+        this.resizeThreshold = 1000; //1000px
+        this.updatedHighResImages = false;
+        this.updatedLowResImages = false;
 
         for (let i = 0; i < numberOfItems; i++) {
             this.images.push(document.getElementById('case-image-' + i));
@@ -18,6 +21,15 @@ class CaseHandle {
         this.activeImage = this.images[0];
         this.activeBtn = this.buttons[0];
         this.activeDescription = this.descriptions[0];
+
+        // If screen width is large, update case images with higher res.
+        // No need to add event listener in this case.
+        if (window.innerWidth >= this.resizeThreshold) {
+            this.resizeEvent();
+        } else {
+            window.onresize = this.resizeEvent.bind(this);
+        }
+
     }
 
     clickHandle(event) {
@@ -41,17 +53,24 @@ class CaseHandle {
             this.activeDescription = descElement;
             this.activeBtn = buttonElement;
 
-            console.log("CLICKING!!");
         }
     }
 
-    showDescription(element) {
-
+    resizeEvent() {
+        let srcset = [];
+        let date;
+        if (!this.updatedHighResImages && window.innerWidth >= 1000) {
+            date = new Date();
+            for (let image of this.images) {
+                srcset = image.getAttribute("srcset").split(' ');
+                srcset = srcset.filter(element => !element.includes(','));
+                image.src = srcset[2] + "?" + date.getMilliseconds();
+            }
+            this.updatedHighResImages = true;
+            this.updatedLowResImages = false;
+        }
     }
 
-    changeActiveBtn(button) {
-
-    }
 
 }
 

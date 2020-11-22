@@ -11,6 +11,12 @@ body {
   overflow-x: hidden;
 }
 
+.content-container {
+  width: 100%;
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+}
+
 .side-margin {
   margin-left: $sideMargin;
   margin-right: $sideMargin;
