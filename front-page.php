@@ -133,7 +133,7 @@ while ($caseProjects->have_posts()) {
 <div class="image bg-image--breaker-full"></div>
 <!-- Features section -->
 <section class="front-section side-padding">
-    <div class="content-container">
+    <div class="content-container mt6">
         <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-full.svg'); ?>" class="bg-image bg-image--tr" alt="" aria-hidden="true"/>
         <div id="features-container" class="feature-container">
             <h2>Feature list</h2>
@@ -229,7 +229,8 @@ while ($caseProjects->have_posts()) {
 
 <!-- Technologies section -->
 <section class="front-section side-padding">
-    <div id="technologies-container" class="feature-container">
+    <div class="content-container">
+        <div id="technologies-container" class="feature-container">
         <h2>Technologies</h2>
         <div class="description feature-box">
             <p id="tech--general" class="mt0">
@@ -315,15 +316,20 @@ while ($caseProjects->have_posts()) {
         </div>
         <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-outline.svg'); ?>" class="bg-image bg-image--bl" alt="" aria-hidden="true"/>
     </div>
+    </div>
 </section>
 
 <!-- Contact section -->
 <section class="front-section side-padding pt4 pb4">
     <img src="<?php echo get_theme_file_uri('/images/bg/simple-breaker.svg'); ?>" class="bg-image bg-image--tl bg-image--breaker" alt="" aria-hidden="true"/>
-    <h2 id="contact-heading">Contact</h2>
-    <?php
-        echo apply_shortcodes('[contact-form-7 id="50" title="Contact form 1" html_class="contact__form"]');
-     ?>
+    <div class="content-container mt4">
+        <div class="contact-container">
+            <h2 id="contact-heading" class="contact-heading">Contact</h2>
+            <?php
+                echo apply_shortcodes('[contact-form-7 id="50" title="Contact form 1" html_class="contact__form"]');
+             ?>
+        </div>
+    </div>
 </section>
 <?php
 get_footer();
