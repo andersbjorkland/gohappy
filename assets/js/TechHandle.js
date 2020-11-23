@@ -86,7 +86,6 @@ class TechHandle {
             this.activeDescription.classList.add("hidden");
             this.activeDescription.setAttribute('aria-hidden', 'true');
             this.activeDescription = false;
-            this.hideGeneral(false);
         } else {
             if (this.activeDescription && this.activeDescription !== element) {
                 this.activeDescription.classList.add("hidden");

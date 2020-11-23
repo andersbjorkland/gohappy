@@ -130,6 +130,7 @@ while ($caseProjects->have_posts()) {
     </div>
 </section>
 
+<div class="image bg-image--breaker-full"></div>
 <!-- Features section -->
 <section class="front-section side-padding">
     <div class="content-container">
@@ -312,6 +313,7 @@ while ($caseProjects->have_posts()) {
                 used to create a seamless user experience.
             </p>
         </div>
+        <img src="<?php echo get_theme_file_uri('/images/bg/puzzle-outline.svg'); ?>" class="bg-image bg-image--bl" alt="" aria-hidden="true"/>
     </div>
 </section>
 
