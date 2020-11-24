@@ -2,12 +2,12 @@
   position: absolute;
   width: 100%;
   background-color: #084559;
+  height: $footerHeight;
 
   &-container {
-    height: 9rem;
     background-color: $darkBlue;
     padding: 1rem;
-    width: 100%;
+    height: calc(#{$footerHeight} - 2rem);
   }
 
   &__logo {

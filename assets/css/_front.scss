@@ -201,6 +201,9 @@
         &--top, &--middle, &--bottom {
           align-self: flex-start;
         }
+        &--bottom {
+          margin-bottom: 4rem;
+        }
       }
     }
     &__bg-number {
