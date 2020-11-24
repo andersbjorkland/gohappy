@@ -20,7 +20,7 @@
             <a class="nav__item <?php if (is_home()) echo 'active'; ?>" href="<?php echo site_url(); ?>">
                 <div class="aria-link">Home</div>
             </a>
-            <a class="nav__item <?php if (get_post_type() === 'post' && !is_home()) echo 'active'; ?>" href="#">
+            <a class="nav__item <?php if (get_post_type() === 'post' && !is_home()) echo 'active'; ?>" href="<?php echo site_url('/blog'); ?>">
                 <div class="aria-link">Blog</div>
             </a>
             <a class="nav__item <?php if (is_page('about')) echo 'active'; ?>" href="<?php echo site_url('/about'); ?>">
