@@ -42,10 +42,11 @@
         gap: 3rem;
 
         .front-button {
-          border: $darkBlue solid 4px;
+          border: $darkBlue solid 2px;
         }
         .front-button.active {
           background: none;
+          border-width: 3px;
         }
       }
 

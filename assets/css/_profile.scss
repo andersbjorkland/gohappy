@@ -26,9 +26,9 @@
     justify-self: center;
 
     img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
-      max-width: 12rem;
+      width: 12rem;
       border-radius: 50%;
     }
   }

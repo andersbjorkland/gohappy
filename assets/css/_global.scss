@@ -41,6 +41,9 @@ body {
 }
 
 time {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: $darkBlue;
 }
 
 p {
@@ -53,4 +56,10 @@ p {
 
 .hidden {
   display: none;
+}
+
+.image {
+  &--center {
+    margin: auto;
+  }
 }

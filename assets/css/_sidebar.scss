@@ -1,15 +1,35 @@
 .sidebar {
+  @media screen and (min-width: $largeScreen) {
+
+    &-extended {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      align-items: baseline;
+      column-gap: 4rem;
+    }
+  }
+
 
   &__heading {
   }
 
   &__item {
+    padding: 1rem 0;
 
     h3 {
+      font-size: 1.1rem;
+    }
+    time {
+      font-family: monospace;
+      font-size: 0.7rem;
     }
     p {
+      font-size: 0.8rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0;
     }
     a {
+      font-size: 0.8rem;
       &:hover {
       }
     }

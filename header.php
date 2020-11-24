@@ -17,15 +17,15 @@
             </div>
         </a>
         <nav class="nav">
-            <a class="nav__item <?php if (is_home()) echo 'active'; ?>" href="<?php echo site_url(); ?>">
-                <div class="aria-link">Home</div>
-            </a>
-            <a class="nav__item <?php if (get_post_type() === 'post' && !is_home()) echo 'active'; ?>" href="<?php echo site_url('/blog'); ?>">
-                <div class="aria-link">Blog</div>
-            </a>
-            <a class="nav__item <?php if (is_page('about')) echo 'active'; ?>" href="<?php echo site_url('/about'); ?>">
-                <div class="aria-link">About</div>
-            </a>
+            <div class="nav__item <?php if (is_front_page()) echo 'active'; ?>">
+                <a class="aria-link" href="<?php echo site_url(); ?>">Home</a>
+            </div>
+            <div class="nav__item <?php if (get_post_type() === 'post') echo 'active'; ?>">
+                <a class="aria-link" href="<?php echo site_url('/blog'); ?>">Blog</a>
+            </div>
+            <div class="nav__item <?php if (is_page('about')) echo 'active'; ?>">
+                <a class="aria-link" href="<?php echo site_url('/about'); ?>">About</a>
+            </div>
         </nav>
     </header>
 </div>

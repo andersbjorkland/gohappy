@@ -1,5 +1,62 @@
 <?php
 
+function getParsedContentArray() {
+	$iteration = 0;
+	$mainContent = "";
+	$sideContent = "";
+
+	while(have_posts()) {
+		the_post();
+		$mainId  = get_the_ID();
+		$excerpt = "";
+		if ( has_excerpt() ) {
+			$excerpt = wp_trim_words( get_the_excerpt(), 20 );
+		} else {
+			$excerpt = wp_trim_words( get_the_content(), 20 );
+		}
+
+
+		if ( $iteration === 0 ) {
+			$mainContent =
+				'<div class="content__post">'
+                .'	<h1>' . get_the_title() . '</h1>'
+                .'	<time>' . get_the_date() . '</time>	'
+                . get_the_content()
+                .'</div>';
+		} else {
+			$sideContent .=
+				'<div class="sidebar__item">'
+                .'	<h3>' . get_the_title() . '</h3>'
+                .'	<time>' . get_the_date() . '</time>'
+                .'	<p>' . $excerpt . '</p>'
+                .'  <a href="' . get_the_permalink() . '">Read more</a>'
+                .'</div>';
+		}
+		$iteration ++;
+	}
+	if ($iteration === 1) {
+		$posts = new WP_Query([
+			'posts_per_page' => 5
+		]);
+
+		while ($posts->have_posts()) {
+			$posts->the_post();
+			if (get_the_id() !== $mainId) {
+				$sideContent .=
+					'<div class="sidebar__item">'
+					.'	<h3>' . get_the_title() . '</h3>'
+					.'	<time>' . get_the_date() . '</time>'
+					.'	<p>' . $excerpt . '</p>'
+					.'  <a href="' . get_the_permalink() . '">Read more</a>'
+					.'</div>';
+			}
+		}
+		wp_reset_postdata();
+	}
+
+	return ['main' => $mainContent, 'secondary' => $sideContent];
+}
+
 function theme_files() {
 	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Tangerine:400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,600,900,900i|Roboto:100,300,300i,400,500;700' );
 	wp_enqueue_script( 'font-awesome', '//kit.fontawesome.com/44dcb31394.js' );

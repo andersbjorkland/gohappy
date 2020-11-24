@@ -5,6 +5,10 @@
     align-items: center;
     position: relative;
     min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+    max-width: $contentMaxWidth;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    margin: auto;
 
     h2 {
       margin-top: 4rem;
@@ -16,6 +20,14 @@
       position: relative;
       z-index: 10;
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
     p {
       position: relative;
       z-index: 10;

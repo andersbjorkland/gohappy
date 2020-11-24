@@ -49,15 +49,21 @@ $activeNavColor: $deepCherry;
     display: flex;
     align-items: center;
     margin-left: 1rem;
-    text-decoration: none;
 
-    color: $navItemColors;
-    font-family: "Archivo Black", sans-serif;
-    font-size: 1.2rem;
     opacity: 1;
 
+    a {
+      text-decoration: none;
+
+      color: $navItemColors;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1.2rem;
+    }
+
     &.active {
-      color: $activeNavColor;
+      a {
+        color: $activeNavColor;
+      }
     }
 
     &:hover {
